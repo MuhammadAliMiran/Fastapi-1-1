@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+face_recognition
+numpy
+qdrant-client
+pydantic

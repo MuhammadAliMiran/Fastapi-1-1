@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Similarity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Similarity API</h1>
+        
+        <h2>Compare Faces</h2>
+        <form id="compare-faces-form">
+            <div>
+                <label for="compare-face-file1">Image 1:</label>
+                <input type="file" id="compare-face-file1" name="file1" accept="image/*">
+                <button type="button" id="open-camera1">Open Camera</button>
+                <video id="camera1" width="320" height="240" autoplay style="display:none;"></video>
+                <button type="button" id="take-photo1" style="display:none;">Take Photo</button>
+                <canvas id="photo-canvas1" style="display:none;"></canvas>
+            </div>
+            
+            <div>
+                <label for="compare-face-file2">Image 2:</label>
+                <input type="file" id="compare-face-file2" name="file2" accept="image/*">
+                <button type="button" id="open-camera2">Open Camera</button>
+                <video id="camera2" width="320" height="240" autoplay style="display:none;"></video>
+                <button type="button" id="take-photo2" style="display:none;">Take Photo</button>
+                <canvas id="photo-canvas2" style="display:none;"></canvas>
+            </div>
+            <br>
+            <button type="submit">Compare Faces</button>
+        </form>
+        
+        <div id="result"></div>
+        <div id="images">
+            <img id="img1" src="" alt="Image 1" style="display:none;">
+            <img id="img2" src="" alt="Image 2" style="display:none;">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
